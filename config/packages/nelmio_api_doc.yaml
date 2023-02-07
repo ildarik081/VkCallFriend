@@ -1,0 +1,14 @@
+nelmio_api_doc:
+    documentation:
+        info:
+            title: API Documentation (Demo SWAGGER)
+            description: Контакты <br />
+             - [GitHub](https://github.com/ildarik081)<br />
+             - [Репозиторий](https://github.com/ildarik081)
+            version: 0.0.1
+        tags:
+        - name: Test
+          description: Тестовые ручки
+    areas:
+        path_patterns: 
+            - ^/api(?!/doc$)

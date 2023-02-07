@@ -1,0 +1,27 @@
+imports:
+    - { resource: parameters.yaml }
+
+parameters:
+
+services:
+    _defaults:
+        autowire: true      # Automatically injects dependencies in your services.
+        autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
+
+    App\:
+        resource: '../src/'
+        exclude:
+            - '../src/DependencyInjection/'
+            - '../src/Entity/'
+            - '../src/Kernel.php'
+
+    JMS\Serializer\SerializerInterface: '@jms_serializer'
+
+    App\Component\Resolver\RequestDtoResolver:
+        tags:
+            - { name: controller.argument_value_resolver, priority: 50 }
+
+    Nyholm\Psr7\Factory\Psr17Factory:
+        class: Nyholm\Psr7\Factory\Psr17Factory
+
+    JMS\Serializer\Serializer: '@jms_serializer'

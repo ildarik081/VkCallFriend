@@ -1,0 +1,33 @@
+.idea
+.vscode
+*.log
+*.local
+*.pem
+/.env.local
+/var/
+/vendor/
+/.phpcs-cache
+/.history
+###> symfony/phpunit-bridge ###
+.phpunit.result.cache
+/phpunit.xml
+###< symfony/phpunit-bridge ###
+toryOrderStatus = Postman::getInstance()->getHistoryOrderStatus();
+
+        // if (null !== $historyOrderStatus) {
+        //     $this->orderStatusMailer->sendNotify($historyOrderStatus);
+        // }
+###> symfony/framework-bundle ###
+/.env.local
+/.env.local.php
+/.env.*.local
+/config/secrets/prod/prod.decrypt.private.php
+/public/bundles/
+/var/
+/vendor/
+###< symfony/framework-bundle ###
+
+###> squizlabs/php_codesniffer ###
+/.phpcs-cache
+/phpcs.xml
+###< squizlabs/php_codesniffer ###
