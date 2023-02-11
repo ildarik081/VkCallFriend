@@ -1,4 +1,3 @@
-[![php](https://img.shields.io/badge/PHP->=8.1-green.svg?style=flat&logo=appveyor "PHP 8.1+")](http://php.net/)
 # VK "обзвон" друзей
 ![Swagger](file/1.png)
 
