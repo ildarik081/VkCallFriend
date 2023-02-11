@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+                content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>Callback</title>
+    </head>
+    <body>
+    <p>Сохранение данных...</p>
+    </body>
+    <script>
+        var urlHash = window.location.hash;
+        var url = 'http://localhost/vk/save' + urlHash.replace('#', '?');
+        location.href=url;
+    </script>
+</html>

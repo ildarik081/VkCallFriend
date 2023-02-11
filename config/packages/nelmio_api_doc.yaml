@@ -4,11 +4,15 @@ nelmio_api_doc:
             title: API Documentation (Demo SWAGGER)
             description: Контакты <br />
              - [GitHub](https://github.com/ildarik081)<br />
-             - [Репозиторий](https://github.com/ildarik081)
+             - [Репозиторий](https://github.com/ildarik081/VkCallFriend)
             version: 0.0.1
         tags:
-        - name: Test
-          description: Тестовые ручки
+        - name: Authorization
+          description: Ручки связанные с авторизацией
+        - name: User
+          description: Ручки для работы с друзьями пользователя
+        - name: Call
+          description: Ручка для включения события создания созвона
     areas:
         path_patterns: 
             - ^/api(?!/doc$)
