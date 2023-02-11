@@ -18,7 +18,7 @@ class AppFixtures extends Fixture
         foreach (Aliases::CALL_STATUS as $status) {
             $callStatus = new CallStatus();
             $callStatus->setValue($status['value']);
-            $callStatus->setDescription($status['description'] ?? null);
+            $callStatus->setDescription($status['description']);
             $manager->persist($callStatus);
         }
 

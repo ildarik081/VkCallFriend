@@ -68,7 +68,7 @@ class UserController extends AbstractController
      *      @Model(type=Friend::class)
      * )
      * @OA\Tag(name="User")
-     * @param BaseRequest $request
+     * @param Friend $friend
      * @return Friend
      */
     #[Route('/friend/{externalId}', name: 'get_list', methods: ['GET'])]

@@ -30,13 +30,13 @@ class CallbackService
         if (null === $user) {
             $user = EntityFactory::createUser(
                 sessionId: $request->query->get('state'),
-                externalId: $request->query->get('user_id'),
+                externalId: (int) $request->query->get('user_id'),
                 accessToken: $request->query->get('access_token')
             );
         } else {
             $user
                 ->setSessionId($request->query->get('state'))
-                ->setExternalId($request->query->get('user_id'))
+                ->setExternalId((int) $request->query->get('user_id'))
                 ->setAccessToken($request->query->get('access_token'))
             ;
         }
