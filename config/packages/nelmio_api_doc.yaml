@@ -4,7 +4,7 @@ nelmio_api_doc:
             title: API Documentation (Demo SWAGGER)
             description: Контакты <br />
              - [GitHub](https://github.com/ildarik081)<br />
-             - [Репозиторий](https://github.com/ildarik081)
+             - [Репозиторий](https://github.com/ildarik081/VkCallFriend)
             version: 0.0.1
         tags:
         - name: Authorization
