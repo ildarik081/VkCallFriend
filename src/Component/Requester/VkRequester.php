@@ -31,13 +31,13 @@ class VkRequester
             ->vkOAuth
             ->getAuthorizeUrl(
                 response_type: VKOAuthResponseType::TOKEN,
-                client_id: $this->vkAppId, 
+                client_id: $this->vkAppId,
                 redirect_uri: Aliases::VK_REDIRECT_URL,
-                display: VKOAuthDisplay::PAGE, 
+                display: VKOAuthDisplay::PAGE,
                 scope: [
                     VKOAuthUserScope::FRIENDS,
                     VKOAuthUserScope::OFFLINE
-                ], 
+                ],
                 state: $request->session
             )
         ;

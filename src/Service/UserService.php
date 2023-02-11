@@ -61,7 +61,6 @@ class UserService
                 logLevel: LogLevel::CRITICAL
             );
         }
-        
 
         $existFriends = $this->getExistFriends($user);
         $requestFriends = $this->convertRequestFriends($friendsVk['items']);
