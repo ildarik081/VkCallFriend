@@ -1,20 +1,11 @@
 framework:
     messenger:
-        # Uncomment this (and the failed transport below) to send failed messages to this transport for later handling.
         reset_on_message: true
 
         transports:
             # https://symfony.com/doc/current/messenger.html#transport-configuration
             call_friend:
                 dsn: '%env(MESSENGER_TRANSPORT_DSN)%'
-                options:
-                    exchange:
-                        name: call_friend
-                    queues:
-                        call_friend:
-                            binding_keys:
-                                - call_friend
 
         routing:
-            # Route your messages to the transports
-            # 'App\Component\Message\SendTransactionMessage': call_friend
+            'App\Component\Message\CallMessage': call_friend

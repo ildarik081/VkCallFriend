@@ -25,3 +25,14 @@ services:
         class: Nyholm\Psr7\Factory\Psr17Factory
 
     JMS\Serializer\Serializer: '@jms_serializer'
+
+    VK\OAuth\VKOAuth:
+        class: VK\OAuth\VKOAuth
+
+    VK\Client\VKApiClient:
+        class: VK\Client\VKApiClient
+
+    App\Component\Requester\VkRequester:
+        class: App\Component\Requester\VkRequester
+        arguments:
+            $vkAppId: '%env(VK_APP_ID)%'
